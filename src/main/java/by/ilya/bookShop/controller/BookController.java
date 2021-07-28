@@ -70,7 +70,7 @@ public class BookController {
     // Update book
     // todo remove unauthorized, forbidden, etc. (not used)
     @ApiOperation(value = "Update book")
-    @PostMapping("/{id}")
+    @PutMapping("/{id}")
     public BookDto updateBook(
             @ApiParam(
                     name = "id",
